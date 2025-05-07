@@ -1,0 +1,121 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropbtn {
+    background-color: #e2e2e2;
+    color: #0033e7;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.dropbtn :hover{
+    color : rgb(57, 167, 57);
+}
+
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #32b32d;
+    color: white;
+    transition: 0.7s;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body.no-scroll {
+    overflow: hidden; 
+}
+
+.popup {
+    margin-top: 70px ;
+    display: none;  
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #006400;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+
+@media (max-width: 768px) {
+    .popup-content {
+        width: 80%;
+    }
+}
+
+#cancelButton{
+    background-color:#F43234;
+    margin-left: 100px;
+}
+#editButton{
+    background-color:#006400;
+    margin-left: 100px;
+}
+#saveButton{
+    background-color:#006400;
+    margin-left: 100px;
+}
+
+
+.blur {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+
