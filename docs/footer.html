@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />"
+</head>
+<style>
+    *{
+        margin:0;
+        padding:7px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:18px;
+        color:white;
+    }
+    footer{ background-color: #3cd070 ;
+        padding-top:40px;
+         }
+    .container
+    {  
+        width: 100%;
+        margin:auto;
+        display:flex;
+        justify-content:center;}
+    .footer-content
+    { width:33.3%;}
+     h3
+    {     
+        font-size:28px;
+        margin-bottom:15px;
+        text-align:center;
+    }
+    p{
+      text-align:center; 
+      padding:0; 
+    }
+   .footer-content p{ 
+        width: 190px;
+        margin: auto;
+        padding:7px;
+    }
+    .footer-content ul {
+        margin-left: 30px;
+        text-align:left;
+    }
+    .list{
+        padding: 0;
+    }
+    .list li
+    {
+     width: auto;
+     text-align: center;
+     list-style-type: none;
+     padding:7px;
+     position: relative;
+    }
+    .list li::before{
+        content:'';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left:50%;
+        top:100%;
+        width: 0;
+        height: 2px;
+        background:#f18930;
+        transition-duration:.8s;
+    }
+    
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons
+{
+    text-align: center;
+    padding:0px;
+}
+.social-icons li
+{
+display:inline-block;
+text-align: center;
+padding: 5px;
+}
+.social-icons i
+{
+    color:white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #00703c;
+}
+.social-icons i:hover
+{
+    color:#004f98 ;
+}
+.bottom-bar{
+    background-color: #03c03c  ;
+    text-align:center;
+    padding:10px 0;
+    margin-top: 50px;
+    width: 100%;
+}
+.bottom-bar p{
+    color:#f0e9e9;
+    margin: 0;
+    font-size:16px;
+    padding: 4px;
+    text-align:center;
+}
+</style>
+<body>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>About Us</h3>
+                <ul>
+                    <li> A place where people who are sick or injured can get medical</li>
+                    <li> A charitable institution for the needy aged,infirm(or)young</li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li> 
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul> 
+            </div> 
+       
+            <div class="footer-content">
+                <h3>Quick Link</h3>
+                <ul class="list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Doctors</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+     
+            <div class="footer-content"> 
+                <h3>Open Hours</h3>
+                <p>Monday - Friday</p>
+                <p>8.00 AM - 11.00 PM</p>
+                <p>Saturday - Sunday</p>
+                <p>8.00 AM - 2.00 PM</p>
+            </div>
+
+            <div class="footer-content">
+                <h3>Contact us</h3>
+                <p>Phone :<br> +91 9988998899</p>
+                <p>Email : wecarehospital@gmail.com </p>
+                <p>Address :<br> Electronicity, Bangalore</p>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>© Copyright 2025  |  All Rights Reserved by <a href="https://www.besanttechnologies.com/" target="_blank">besanttechnologies.com</a> </p>
+        </div> 
+    </footer>
+</body>
+</html>

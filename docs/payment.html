@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f6f6f6, #dcdcdc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: 380px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h2 {
+            color: #444;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"], input[type="number"], input[type="email"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .upi-options {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .upi-option img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .upi-option img:hover {
+            transform: scale(1.15) rotate(5deg);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #45a049, #4CAF50);
+        }
+        .upi-option{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Payment Details</h2>
+        <form>
+            <label for="name">Cardholder Name</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+
+            <label for="card-number">Card Number</label>
+            <input type="number" id="card-number" placeholder="1234 5678 9012 3456" required>
+
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="number" id="cvv" placeholder="123" required>
+
+            <h3>OR</h3>
+            <label>UPI Payment</label>
+            <div class="upi-options">
+                <div class="upi-option">
+                    <img src="upi images/Interior Space Designer.jpeg" alt="PhonePe" title="PhonePe">
+                </div>
+                <div class="upi-option">
+                    <img src="upi images/Google Pay logo symbol in vector (_EPS + .SVG + .CDR) - Brandlogos.jpeg" alt="Google Pay" title="Google Pay">
+                </div>
+                <div class="upi-option">
+                    <img src="upi images/Paytm - Rules the World of Digital Transactions with its Simple and Secured Payments!.jpeg" alt="Paytm" title="Paytm">
+                </div>
+                <div class="upi-option">
+                    <img src="upi images/tUfNziup.jpeg" alt="BHIM UPI" title="BHIM UPI">
+                </div>
+            </div>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>

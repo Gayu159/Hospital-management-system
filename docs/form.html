@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/x-icon" href="Images/favicon.ico">
+    <title>Claim Form</title>
+    <style>
+        body {
+            background: url("Images/offerbg.jpg") no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+        input, select {
+            width: 90%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        #age{
+            width: 96%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Claim Your Offer</h2>
+    <form onsubmit="validateForm(event)">
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <select id="age" required>
+            <option value="">Age</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+        </select><br>
+
+        <input type="text" id="aadharNumber" placeholder="Aadhar Number" required>
+        <input type="text" id="panNumber" placeholder="PAN Number" required>
+        <input type="tel" id="mobileNumber" placeholder="Mobile Number" required>
+        <input type="email" id="emailId" placeholder="Email ID" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+function validateForm(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form values
+    let fullName = document.getElementById("fullName").value.trim();
+    let age = document.getElementById("age").value;
+    let aadhar = document.getElementById("aadharNumber").value.trim();
+    let pan = document.getElementById("panNumber").value.trim();
+    let mobile = document.getElementById("mobileNumber").value.trim();
+    let email = document.getElementById("emailId").value.trim();
+
+    // Check if all fields are filled
+    if (fullName && age && aadhar && pan && mobile && email) {
+        window.location.href = "thankyou.html"; // Redirect to Thank You page
+    } else {
+        alert("Please fill all the details before submitting.");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Insurance - We Care Hospital</title>
+</head>
+<body>
+    <header>
+        <h1>WeCare Insurance</h1>
+        <div class="container">
+            <form onsubmit="validateForm(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"><br>
+                
+                <label for="mobile">Mobile-Number</label>
+                <input type="text" id="mobile" name="mobile"><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+        <h2 class="policy">Buy health insurance policy online</h2>
+        <img src="policy1.jpg" alt="transparent Image">
+       </header>
+
+    
+    <main>
+        <h1>we care insurance policy</h1>
+        <div class="policy-item pink">Book free home visit</div>
+        <div class="policy-item blue">Doctor bills included</div>
+        <div class="policy-item purple">maternity insurance</div>
+        <div class="policy-item green">Lab tests covered (X-ray, MRI, etc)</div>
+        <div class="policy-item pink">family health insurance</div>
+        <div class="policy-item yellow">senior citizen health insurance</div>
+        <div class="policy-item blue">Access to unlimited specialists</div>
+        <div class="policy-item purple">mediclaim policy</div>
+        <div class="tagline">Choose Even for a better health!</div>
+        <section class="insurance-faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What if my insurance isn't listed?</summary>
+                <p>Please contact our billing department for assistance. We may still work with your provider.</p>
+            </details>
+            <details>
+                <summary>Do you offer financial assistance?</summary>
+                <p>Yes! We Care Hospital provides financial aid programs for those in need. Please visit our billing office for more details.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 We Care Hospital. All rights reserved.</p>
+        <p>contact us:+9090 9090 or 1289 1289</p>
+    </footer>
+</body>
+</html>
+<script>
+    function validateForm(event) {
+        event.preventDefault(); // Prevent form submission
+
+        let name = document.getElementById("name").value.trim();
+        let mobile = document.getElementById("mobile").value.trim();
+
+        if (name === "" || mobile === "") {
+            alert("Please fill in all fields.");
+            return false;
+        }
+
+        // Redirect to another page if validation passes
+        window.location.href = "plans.html"; // Change to your target page
+    }
+</script>
+
