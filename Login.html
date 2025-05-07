@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="icon" type="images/x-icon" href="./Images/favicon.ico">
+        <style>
+            body{
+                background-image:url("./Images/loginbg.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+            }
+            #main{
+                margin-top: 100px;
+                padding: 10px 50px;
+                font-size: 20px;
+                height: 18rem;
+            }
+            label{
+                padding: 10px 5px;
+                font-size: 20px;
+            }
+            .input{
+                width: 75%;
+            }
+            button{
+                background-color:coral;
+                width: 80%;
+                padding: 5px 20px 5px 5px;
+                font-size: 16px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                text-decoration:underline;
+            }
+            .input{
+                padding: 5px;
+                outline: none;
+                border-radius: 7px;;
+                
+            }
+            button:hover {
+                background-color: #ff7f50;
+                transform: scale(1.05);
+            }
+        </style>
+    <body>
+        <div id="main">
+            <h2>Login your account</h2>
+            <form action="login" target="_blank">
+                <label for="username">Username</label><br>
+                <input class="input" type="text" id="loginuser" name="username" placeholder="Enter email"><br><br>
+
+                <label for="password">Password</label><br>
+                <input class="input" type="password" id="loginpass" name="password" placeholder="*******"><br><br>
+
+                <button onclick="login()" type="submit">Login</button>
+
+            </form><br>
+            <div class="register">
+                <a href="forget password.html">Forgot Password ?</a>
+                <p>Don't have an account? <a href="register.html">Sign up</a></p>
+            </div>
+        </div>
+        <script>
+            function login(){
+                event.preventDefault();
+                let loginuser = document.getElementById("loginuser").value;
+                let loginpass = document.getElementById("loginpass").value;
+
+                let user=localStorage.getItem("email");
+                let pass=localStorage.getItem("password");
+
+                if(loginuser == user && loginpass == pass){
+                    localStorage.setItem("loggenIn","true");
+                    window.location.href="users.html";
+                }
+                else{
+                    alert("Invalid username or password!");
+                }
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choose the plans</title>
+    <style>
+      body{
+        background-image: url("transparent.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300vh;
+        margin: 0;
+        padding: 0;
+        
+      }
+        table,th{
+          border: 2px solid #070707;
+          color: #000;
+          line-height: 1.5;
+          margin: 0px 200px 90px 200px;
+          background-color: antiquewhite;
+          opacity: 0.8;
+    }
+      td{
+          border: 2px solid #ab0808e6;
+          color: #000;
+          line-height: 1.5;
+          background-color: antiquewhite;
+        
+}
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .buy-button:hover {
+    background-color: #45a049;
+  }
+  h1 {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 100px 400px 10px 550px;
+    border-radius: 50px; /* Makes it oval */
+    background-color: #0b4c52; /* Button color */
+    color: #f8efef;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft button shadow */
+    cursor: pointer;
+    opacity: 0.9;
+    transition: transform 0.2s ease-in-out;
+}
+
+.container-plan{
+            background-color: #6dd8e6;
+            margin: 10px 300px 30px 300px;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            width: 700px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            line-height: 1.6;
+            opacity: 0.8;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .plan-title {
+            font-weight: bold;
+            color: #e67e22;
+            font-size: 1.2em;
+            margin-top: 10px;
+            height: auto;
+            background-color: aqua;
+            width: 700px;
+        }
+
+        .coverage-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .coverage-list li::before {
+            content: '✅';
+            margin-right: 5px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .price-info {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+  <h1>plans</h1>
+    <table>
+    <tr>
+        <th class="Type of plan">Type of plan</th>
+        <th class="Suitable For">Suitable For</th>
+        <th class="Key Features">Key Features</th>
+    </tr>
+    <tr>
+        <td class="yellow">Individual Health Insurance</td>
+        <td style="display: flex; justify-content: space-between; align-items: center; height: 10vh;">
+          Single person
+        <button class="Buy-button"><a href="forwhom.html" class="buy">Buy</a></button>
+         </td>
+        <td class="pink">Coverage for individual medical expenses</td>
+      </tr>
+      <tr>
+        <td class="yellow">Family Floater Health Insurance</td>
+        <td style="display: flex; justify-content: space-between; align-items: center; height: 10vh;">
+          Families
+          <button class="Buy-button"><a href="forwhom.html" class="buy">Buy</a></button>
+        </td>
+        <td class="red">Shared coverage among family members</td>
+      </tr>
+      <tr>
+        <td class="yellow">Senior Citizen Health Insurance</td>
+        <td style="display: flex; justify-content: space-between; align-items: center; height: 10vh;">
+        Individuals over 60
+        <button class="Buy-button"><a href="forwhom.html" class="buy">Buy</a></button>
+        </td>
+        <td class="red">Tailored to senior health needs</td>
+      </tr>
+      <tr>
+        <td class="yellow">Critical Illness Plans</td>
+        <td style="display: flex; justify-content: space-between; align-items: center; height: 10vh;">
+        Individuals with a family history or anticipating critical illnesses
+        <button class="Buy-button"><a href="forwhom.html" class="buy">Buy</a></button>
+        
+      </td>
+        <td class="red">Lump-sum payout on diagnosis</td>
+      </tr>
+      <tr>
+        <td class="yellow">Top-up Health Insurance</td>
+        <td style="display: flex; justify-content: space-between; align-items: center;height: 10vh;">
+        Individuals with existing coverage
+        <button class="Buy-button"><a href="forwhom.html" class="buy">Buy</a></button>
+        
+      </td>
+        <td class="red">Additional coverage after exhausting base policy</td>
+      </tr>
+    </table>
+    <section>
+      <div class="container-plan">
+        <h2>Plans to Explore</h2>
+
+        <div class="plan-title">💰 Weekly Plan — ₹69</div>
+        <p><strong>Best for:</strong> Students, young professionals, or anyone needing temporary coverage.</p>
+
+        <ul class="coverage-list">
+            <li>Hospitalization: Up to ₹20,000 for basic treatments (fever, minor injuries).</li>
+            <li>Emergency Ambulance: ₹1,000 coverage.</li>
+            <li>OPD Doctor Visit: 1 visit per week (or teleconsultation).</li>
+            <li>Daycare Procedures: Minor surgeries (e.g., fractures, stitches).</li>
+            <li>Accident Coverage: Up to ₹10,000 for accidental injuries.</li>
+        </ul>
+
+        <div class="note">⚠️ Exclusions: No pre-existing diseases, critical illnesses, or maternity benefits.</div>
+      
+      <div class="plan-title">💸 Monthly Plan — ₹279</div>
+      <p><strong>Best for:</strong> Freelancers, small business owners, or families wanting regular coverage.</p>
+
+      <ul class="coverage-list">
+          <li>Hospitalization: Up to ₹1 lakh coverage (including surgeries).</li>
+          <li>Pre & Post-Hospitalization: 10 days before and after hospital stays.</li>
+          <li>OPD Visits: 2 doctor visits per month (teleconsultation included).</li>
+          <li>Lab Tests: Basic diagnostics like blood tests, X-rays, ECG (up to ₹2,000).</li>
+          <li>Daycare Procedures: Cataracts, chemotherapy, minor surgeries.</li>
+          <li>Accident Coverage: ₹50,000 for accidental injuries.</li>
+          <li>Mental Health Support: 1 free counseling session per month.</li>
+      </ul>
+
+      <div class="note">⚠️ Exclusions: Major critical illnesses, cosmetic surgeries, maternity (optional add-on possible).</div>
+
+      <div class="plan-title">🏅 Yearly Plan — ₹3289</div>
+      <p><strong>Best for:</strong> Families, senior citizens, or individuals wanting full, long-term protection.</p>
+
+      <ul class="coverage-list">
+          <li>Hospitalization: ₹5 lakh coverage for major surgeries, ICU stays, and chronic treatments.</li>
+          <li>Pre & Post-Hospitalization: 30 days before and 60 days after treatment.</li>
+          <li>OPD Visits: Unlimited teleconsultations + 10 physical doctor visits per year.</li>
+          <li>Diagnostics: Annual health checkup included (₹5,000 limit).</li>
+          <li>Daycare Procedures: Extensive coverage for minor surgeries and treatments.</li>
+          <li>Accident Coverage: ₹2 lakh for accidental injuries and disability protection.</li>
+          <li>Critical Illness Add-on: Covers cancer, heart attack, kidney failure (optional).</li>
+          <li>Maternity Coverage: ₹50,000 for delivery and newborn care (after 1 year waiting).</li>
+          <li>Wellness Perks: Discounts on gyms, nutrition plans, and mental health counseling.</li>
+      </ul>
+
+      <div class="note">⚠️ Exclusions: Cosmetic treatments, pre-existing disease waiting period (1 year).</div>
+  </div>
+</div>
+    </section>
+</body>
+</html>

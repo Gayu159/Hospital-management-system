@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="Css/update.css">
+</head>
+<body>
+    <div class="popup" id="profilePopup">
+        <div class="popup-content">
+            <h3>Update Profile</h3><br>
+            <form id="updateForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" disabled><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" disabled><br><br>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" disabled><br><br>
+                
+                <label for="phone">Phone No:</label>
+                <input type="text" id="phone" disabled><br><br>
+
+                <button type="button" id="editButton">Edit</button>
+                <button type="button" id="saveButton" style="display: none;">Save</button>
+                <a href="users.html">Go Back</a>
+                <button type="button" id="cancelButton">Cancel</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    // Retrieve values with fallback defaults
+    document.getElementById("name").value = localStorage.getItem("name") || "John Doe";
+    document.getElementById("email").value = localStorage.getItem("email") || "john@example.com";
+    document.getElementById("address").value = localStorage.getItem("address") || "123 Street Name";
+    document.getElementById("phone").value = localStorage.getItem("mobile") || "123-456-7890";
+});
+
+document.getElementById('editButton').addEventListener('click', function() {
+    document.getElementById('name').disabled = false;
+    document.getElementById('email').disabled = false;
+    document.getElementById('address').disabled = false;
+    document.getElementById('phone').disabled = false;
+
+    document.getElementById('editButton').style.display = 'none';
+    document.getElementById('saveButton').style.display = 'inline-block';
+});
+
+document.getElementById('saveButton').addEventListener('click', function() {
+    const updatedName = document.getElementById('name').value;
+    const updatedEmail = document.getElementById('email').value;
+    const updatedAddress = document.getElementById('address').value;
+    const updatedPhone = document.getElementById('phone').value;
+
+    localStorage.setItem("name", updatedName);
+    localStorage.setItem("email", updatedEmail);
+    localStorage.setItem("address", updatedAddress);
+    localStorage.setItem("mobile", updatedPhone);
+
+    alert("Profile updated successfully!");
+
+    document.getElementById('name').disabled = true;
+    document.getElementById('email').disabled = true;
+    document.getElementById('address').disabled = true;
+    document.getElementById('phone').disabled = true;
+
+    document.getElementById('saveButton').style.display = 'none';
+    document.getElementById('editButton').style.display = 'inline-block';
+});
+
+document.getElementById('cancelButton').addEventListener('click', function() {
+    location.reload(); // Reset inputs by reloading the page
+});
+</script>
+</html>

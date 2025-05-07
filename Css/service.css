@@ -1,0 +1,94 @@
+.Services_part {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 30px;
+}
+.wrapper {
+    min-height:3vh;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    /* background: hsl(175, 87%, 59%); */
+    flex-direction:column;
+    padding-top:2px;
+    font-family:'roboto',sans-serif;
+}
+.wrapper h1{
+    color: rgb(114, 50, 174);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 3em;
+    margin-bottom:10px;
+    padding: 5px 15px;
+}
+.content-box{
+    width: 1300px;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap ;
+    align-items:center; 
+    padding:34px;
+    gap:30px;
+}
+.card{
+    min-height:220px;
+    width: 300px;
+    padding:3px;
+    border-radius: 7px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    background: #fff;
+    margin: 14px 5.1px;
+    transition: 1s;
+}
+
+.card i {
+    margin-bottom:7px;
+    color: hsl(130, 100%, 50%);
+    font-size: 45px;
+}
+.card h2{
+    margin-bottom:30px;
+    text-align: center;
+}
+.card p {
+    color:hwb(198 25% 71%);
+    text-align: center;
+}
+.card:hover{
+    background: linear-gradient( 90deg,rgba(2, 6, 134, 0.7)0%,
+                                        rgba(9,9,221,0.7)35%,
+                                        hsla(173, 60%, 3%, 0.7)100%);
+                                         
+    opacity: 1;
+   color: hsl(120, 95%, 50%);                                      
+}
+.card:hover p{
+    color: #fdfbfd;
+    text-align: center;
+    font-size:20px;
+}
+.card:hover i{
+    color: rgb(242, 247, 242);
+}
+
+.k{
+    text-align: center;
+}
+.video{
+    margin-top: 30px;
+    padding-left: 20% ;
+    gap: 20px;
+}
+iframe {
+    width: 40%;
+    height: 350px;
+    padding: 20px;
+}

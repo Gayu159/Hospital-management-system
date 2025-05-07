@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 140px;
+    padding: 0;
+    background: url('lab1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Header */
+/* header {
+    background: #004aad;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    color: white;
+}                                    */
+                                        
+.logo img {
+    width: 150px;
+}
+
+.search-bar input {    
+    padding: 8px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+}
+                                                      
+.login-btn {
+    background: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Doctor Animation */
+.doctor-section {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.doctor-animation {
+    width: 200px;
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Lab Test Section */
+.lab-tests {
+    padding:  10px 30px;
+    text-align: center;
+}
+
+.lab-tests h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #e5d5d5;
+}
+
+.tests-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 10px;
+    width: 100%;
+}
+
+.tests-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;  /* Ensures items align from the start */
+    overflow-x: auto;  /* Allows horizontal scrolling */
+}
+
+.test {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.price {
+    font-weight: bold;
+    color: #28a745;
+    margin: 10px 0;
+    display: block;
+}
+
+.add-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-btn:hover {
+    background: #0056b3;
+}
+
+/* Benefits Section */
+.benefits {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #004aad;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer input {
+    padding: 8px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+
+
+
+

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta http-equiv="refresh" content="2"> -->
+        <title>We Care Hospital</title>
+        <link rel="stylesheet" href="./Css/header.css">
+        <!-- <link rel="stylesheet" href="./Css/slider.css"> -->
+        <link rel="stylesheet" href="./Css/slider.css"> 
+        <link rel="stylesheet" href="./Css/Footer.css">
+        <link rel="icon" type="images/x-icon" href="Images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./Css/service.css">
+        <link rel="stylesheet" href="./Css/offer.css">
+    </head>
+    <body>
+        <!-- Header Section Starts -->
+        <header class="top_header">
+            <div>
+                <a href="mailto:wecarehospital@gmail.com" class="mail">
+                    <img width="40px" height="auto" src="Images/mail-255.png" alt="mail">
+                    <p>wecarehospital@gmail.com</p>
+                </a> 
+            </div>
+            <div class="callicon">
+                <div>
+                    <a href="tel:9988998899" id="callicon">
+                        <img width="25px" height="auto" src="Images/call.jpg" alt="callicon">
+                        <p>9988998899</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="tel:9080706050" id="emergencyicon">
+                        <img width="30px" height="auto" src="Images/emergencyicon.png" alt="emergencyicon">
+                        <p>9080706050</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <header class="bottom_header">
+            <!-- Logo and Name -->
+            <div class="Logoname">
+                <div>
+                    <img width="70px" src="Images/head logo.png" alt="logo">
+                </div>
+                <div><h4>WeCare Hospital</h4></div>
+            </div>
+            <!-- Navigation Tags -->
+            <nav>
+                <a href="#">Home</a>
+                <a href="about.html" target="_blank">About</a>
+                <a href="#Service">Service</a>
+                <a href="pageblog.html">Blogs</a>
+                <a href="doctors.html" target="_blank">Doctors</a>
+                <a href="#footer">Contact Us</a>
+                <!-- <a href="Emergency.html">Emergency</a> -->
+            </nav>
+            <!-- Appoinment and Login Section -->
+            <div class="Right_corner">
+                <div>
+                    <a class="btn" href="appoint2.html" target="_blank">Book Appointment</a>
+                </div>
+                <div>
+                    <a class="login" href="Login.html" target="_blank">Login/Register</a>
+                </div>
+            </div>
+        </header>
+        <!-- Header Section Ends -->
+
+        <!-- Slider Section Starts -->
+        <section class="container">
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="doc1.png" alt="doc1">
+                        <p class="slide_text">Emergency care you can <span style="color:#006400 ">trust</span> <br> with <span style="color:#006400 ">free ambulance service</span> for<br> surgery patients.</p>
+                        <a class="emer" href="Emergency.html">Emergency</a>
+                    </div>
+                    <div class="item">
+                        <img src="doc2.png" alt="doc2">t
+                        <p class="slide_text"><span style="color:#006400 ">Advanced lab tests</span> with precise <br> results because your health matters</p>
+                        <a class="emer" href="lab.html">Lab Tests</a>
+                    </div>
+                    <div class="item">
+                        <img src="doc3.png" alt="doc3">
+                        <p class="slide_text">Worry less about bills, focus more on <br>recovery <span style="color:#006400 ">we support </span>your <br><span style="color:#006400 ">insurance</span> needs </p>
+                        <a class="emer" href="insurance.html" target="_blank">Insurance Plans</a>
+                    </div>
+                    <div class="item">
+                        <img src="doc4.png" alt="doc4">
+                        <p class="slide_text">Healthcare for all <br> <span style="color:#006400 ">30% discount</span> for <br><span style="color:#006400 ">financially supported</span> patients</p>
+                        <button class="emer" onclick="redirectToForm()">Claim Now</button>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <script src="./Script/slider.js"></script>
+         
+        <!-- Slider Section Ends -->
+
+        <!-- Offer Section Start -->
+        <!-- <section id="offer">
+            <div class="offer">
+                <div class="slider-wrapper">
+                    <div class="slides_main">
+                        <div class="slide1">
+                            <h2>Free Trial for Premium Features</h2>
+                            <p><li>Offer a 30-day free trial of advanced HMS features like AI-based patient diagnosis assistance, automated billing, or telemedicine integration.</li></p>
+                                <li>Helps hospitals test the system before committing to a paid plan.</li></p>
+                                <button class="sparkle-btn" onclick="redirectToForm()">Claim Now</button>
+                        </div>
+                
+                        <div class="slide1">
+                            <h2>Discount on Multi-Year Subscription</h2>
+                            <p><li>Provide 20%–30% discount for hospitals that choose a 3–5 year subscription.</li>
+                                <li>Encourages long-term commitment and reduces renewal hassle.</li></p>
+                                <button class="sparkle-btn" onclick="redirectToForm()">Claim Now</button>
+                        </div>
+                
+                        <div class="slide1">
+                            <h2>Customized Module Development at No Extra Cost</h2>
+                            <p><li>Offer free customization for early adopters, allowing them to request unique features.</li>
+                                <li>Helps hospitals tailor the system to their specific needs.</li></p>
+                                <button class="sparkle-btn" onclick="redirectToForm()">Claim Now</button>
+                        </div>
+                
+                        <div class="slide1">
+                            <h2>Priority Support & Training for Early Adopters</h2>
+                            <p><li>Provide free onsite/virtual training for hospital staff.</li>
+                               <li>Include priority 24/7 support for technical issues.
+                                Ensures a smooth transition to the new system.</li></p>
+                                <button class="sparkle-btn" onclick="redirectToForm()">Claim Now</button>
+                        </div>
+                
+                        <div class="slide1">
+                            <h2>Referral Program for Partner Hospitals</h2>
+                            <p><li>Offer cashback or discounts for hospitals that refer new clients.</li>
+                               <li>Example: 5% off the next year's subscription for every successful referral.</li>
+                                <li>Encourages word-of-mouth marketing and builds trust in the system.</li></p>
+                                <button class="sparkle-btn" onclick="redirectToForm()">Claim Now</button>
+                        </div>
+                    </div>
+                </div> -->
+            
+                <!-- Navigation buttons -->
+                <!-- <button class="nav-button prev" onclick="prevSlide()"> ❮ </button>
+                <button class="nav-button next" onclick="nextSlide()"> ❯ </button>
+            </div> -->
+            
+            <script>
+                let currentSlide = 0;
+            
+                function nextSlide() {
+                    if (currentSlide < 4) {
+                        currentSlide++;
+                        document.querySelector('.slides_main').style.transform = `translateX(-${currentSlide * 100}%)`;
+                    }
+                }
+            
+                function prevSlide() {
+                    if (currentSlide > 0) {
+                        currentSlide--;
+                        document.querySelector('.slides_main').style.transform = `translateX(-${currentSlide * 100}%)`;
+                    }
+                }
+            
+                function redirectToForm() {
+                    window.open("form.html","_blank");
+                }
+            </script>
+        </section>
+        <!-- Offer Section Ends -->
+
+        <!-- Services Section Start -->
+        <section class="Services_part" id="Service">
+            <div class="wrapper">
+                <h1> OUR SERVICE</h1><br>
+                <h3>Stay Safe,Stay Healthy </h3>
+            
+                <div class="content-box">
+                    <div class="card">
+                        <i class="fa-sharp-duotone fa-solid fa-truck-medical"></i>
+                        <h2>Emergency Services</h2>
+                        <p>We provide 24/7 emergency care with specialized trauma and ambulance services for urgent medical situations.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-person-cane"></i>
+                        <h2> Patient's Detial </h2>
+                        <p>Our hospital offers both inpatient care for complex conditions and convenient outpatient services for minor procedures.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-droplet"></i>
+                        <h2>Diagnostic Services</h2>
+                        <p>Our advanced imaging and laboratory services ensure quick, accurate diagnoses for effective treatment.</p>        
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <h2>Orthopedics</h2>
+                        <p>Treatment for bone, joint, and musculoskeletal system injuries and disorders.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-virus"></i>
+                        <h2>Oncology Services</h2>
+                        <p>Cancer care, including diagnosis, treatment options, and support for patients undergoing treatment.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-person-breastfeeding"></i>
+                        <h2> Baby Care</h2>
+                        <p>Dedicated care for newborns, including neonatal monitoring, vaccinations, and early development support.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/AKa2ABRRgPs" title="#1 Health Care System in Hospital Medical Research: Innovation Happens Here | Mass General Brigham" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Vd2hcQCZlhY" title="Tampa General Hospital - Moving Critical Care Forward" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- Services Section Ends -->
+
+        <!-- Footer Section Starts -->
+        <footer id="footer">
+            <div class="footer_part1">
+                <div class="footer-content">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li> A place where people who are sick or injured can get medical</li><br>
+                        <li> A charitable institution for the needy aged,infirm(or)young</li>
+                    </ul><br>
+                    <ul class="social-icons">
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li> 
+                        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul> 
+                </div> 
+           
+                <div class="footer-content">
+                    <h3>Quick Link</h3>
+                    <ul class="list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="pageblog.html">Blogs</a></li>
+                        <li><a href="#Service">Service</a></li>
+                        <li><a href="doctors.html" target="_blank">Doctors</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="Emergency.html">Emergency</a></li>
+                    </ul>
+                </div>
+         
+                <div class="footer-content">
+                    <h3>Departments</h3>
+                    <ol>
+                        <li>Anesthesiology</li>
+                        <li>Cardiology</li>
+                        <li>Dermatology</li>
+                        <li>Endocrinology</li>
+                        <li>ENT (Ear, Nose, Throat)</li>
+                        <li>General-surgery</li>
+                        <li>Nephrology</li>
+                        <li>Neurology & Neurosurgery</li>
+                        <li>Oncology</li>
+                        <li>Orthopedics</li>
+                        <li>Pediatrics</li>
+                        <li>Psychiatry & Mental Health</li>
+                        <li>Pulmonology</li>
+                        <li>Urology</li>
+                    </ol>
+                </div>
+    
+                <div class="footer-content">
+                    <h3>Contact us</h3>
+                    <p>Phone :<br> +91 9988998899</p>
+                    <p>Email :<br> wecarehospital@gmail.com </p>
+                    <p>Address :<br> Electronicity, Bangalore</p>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <p>© Copyright 2025  |  All Rights Reserved by <a href="https://www.besanttechnologies.com/" target="_blank">besanttechnologies.com</a> </p>
+            </div> 
+        </footer>
+        
+        <!-- Footer Section Ends -->
+    </body>
+</html>
